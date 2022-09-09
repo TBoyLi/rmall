@@ -4,12 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.redli.rmall</groupId>
+    <groupId>com.redli.rmall</groupId>
     <artifactId>rmall</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>rmall-common</module>
+        <module>rmall-mbg</module>
     </modules>
 
     <parent>
@@ -41,9 +42,9 @@
         <aliyun-oss.version>2.5.0</aliyun-oss.version>
         <logstash-logback.version>7.2</logstash-logback.version>
         <minio.version>8.4.1</minio.version>
-        <mall-common.version>1.0-SNAPSHOT</mall-common.version>
-        <mall-mbg.version>1.0-SNAPSHOT</mall-mbg.version>
-        <mall-security.version>1.0-SNAPSHOT</mall-security.version>
+        <rmall-common.version>1.0-SNAPSHOT</rmall-common.version>
+        <rmall-mbg.version>1.0-SNAPSHOT</rmall-mbg.version>
+        <rmall-security.version>1.0-SNAPSHOT</rmall-security.version>
     </properties>
 
     <dependencies>
@@ -77,6 +78,18 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--mall通用模块-->
+            <dependency>
+                <groupId>com.redli.rmall</groupId>
+                <artifactId>rmall-common</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <!--mall中MBG生成模块-->
+            <dependency>
+                <groupId>com.redli.rmall</groupId>
+                <artifactId>rmall-mbg</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
             <!--MyBatis分页插件starter-->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>

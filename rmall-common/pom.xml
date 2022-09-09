@@ -8,11 +8,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>mall-common</name>
-    <description>mall-common project for mall</description>
+    <name>rmall-common</name>
+    <description>rmall-common project for rmall</description>
 
     <parent>
-        <groupId>org.redli.rmall</groupId>
+        <groupId>com.redli.rmall</groupId>
         <artifactId>rmall</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
