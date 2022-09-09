@@ -11,6 +11,7 @@
     <modules>
         <module>rmall-common</module>
         <module>rmall-mbg</module>
+        <module>rmall-security</module>
     </modules>
 
     <parent>
@@ -82,13 +83,19 @@
             <dependency>
                 <groupId>com.redli.rmall</groupId>
                 <artifactId>rmall-common</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${rmall-common.version}</version>
             </dependency>
             <!--mall中MBG生成模块-->
             <dependency>
                 <groupId>com.redli.rmall</groupId>
                 <artifactId>rmall-mbg</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${rmall-mbg.version}</version>
+            </dependency>
+            <!--mall安全模块-->
+            <dependency>
+                <groupId>com.redli.rmall</groupId>
+                <artifactId>rmall-security</artifactId>
+                <version>${rmall-security.version}</version>
             </dependency>
             <!--MyBatis分页插件starter-->
             <dependency>
