@@ -12,6 +12,7 @@
         <module>rmall-common</module>
         <module>rmall-mbg</module>
         <module>rmall-security</module>
+        <module>rmall-admin</module>
     </modules>
 
     <parent>
@@ -33,6 +34,7 @@
         <druid.version>1.2.9</druid.version>
         <hutool.version>5.8.0</hutool.version>
         <springfox-swagger.version>3.0.0</springfox-swagger.version>
+        <knife4j.version>3.0.3</knife4j.version>
         <swagger-models.version>1.6.0</swagger-models.version>
         <swagger-annotations.version>1.6.0</swagger-annotations.version>
         <mybatis-generator.version>1.4.1</mybatis-generator.version>
@@ -91,7 +93,7 @@
                 <artifactId>rmall-mbg</artifactId>
                 <version>${rmall-mbg.version}</version>
             </dependency>
-            <!--mall安全模块-->
+            <!--mall认证和授权安全模块-->
             <dependency>
                 <groupId>com.redli.rmall</groupId>
                 <artifactId>rmall-security</artifactId>
@@ -126,6 +128,11 @@
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-boot-starter</artifactId>
                 <version>${springfox-swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
             <!--解决Swagger访问主页时的NumberFormatException问题-->
             <dependency>
