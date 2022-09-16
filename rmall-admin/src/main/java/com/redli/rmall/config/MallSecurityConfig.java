@@ -16,7 +16,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * mall-security模块相关配置
- * Created by redli on 2019/11/9.
+ *
+ * @author redli
+ * @date 2022/9/9
  */
 @Configuration
 public class MallSecurityConfig {

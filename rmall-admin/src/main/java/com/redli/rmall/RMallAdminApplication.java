@@ -4,9 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author: redli
- * @date: 2022/9/15 10:12
- * @description:
+ * 主程序
+ *
+ * @author redli
+ * @date 2022/9/9
  */
 
 @SpringBootApplication

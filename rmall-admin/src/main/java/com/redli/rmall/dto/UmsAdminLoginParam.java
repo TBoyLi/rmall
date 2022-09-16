@@ -8,7 +8,9 @@ import javax.validation.constraints.NotEmpty;
 
 /**
  * 用户登录参数
- * Created by redli on 2018/4/26.
+ *
+ * @author redli
+ * @date 2022/9/9
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

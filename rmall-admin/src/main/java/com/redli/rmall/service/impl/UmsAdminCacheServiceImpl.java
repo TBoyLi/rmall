@@ -19,7 +19,9 @@ import java.util.stream.Collectors;
 
 /**
  * 后台用户缓存操作Service实现类
- * Created by redli on 2020/3/13.
+ *
+ * @author redli
+ * @date 2022/9/9
  */
 @Service
 public class UmsAdminCacheServiceImpl implements UmsAdminCacheService {

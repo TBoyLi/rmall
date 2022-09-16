@@ -14,7 +14,7 @@ import java.util.List;
  * 后台用户管理Service
  *
  * @author redli
- * @date 2018/4/26
+ * @date 2022/9/9
  */
 public interface UmsAdminService {
     /**

@@ -8,7 +8,7 @@ import java.util.List;
  * 后台资源分类管理Service
  *
  * @author redli
- * @date 2020/2/5
+ * @date 2022/9/9
  */
 public interface UmsResourceCategoryService {
 

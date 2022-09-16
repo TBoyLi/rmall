@@ -8,7 +8,7 @@ import java.util.List;
  * 会员等级管理Service
  *
  * @author redli
- * @date 2018/4/26
+ * @date 2022/9/9
  */
 public interface UmsMemberLevelService {
     /**

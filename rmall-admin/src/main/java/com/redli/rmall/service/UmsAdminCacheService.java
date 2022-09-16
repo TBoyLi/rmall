@@ -9,7 +9,7 @@ import java.util.List;
  * 后台用户缓存操作Service
  *
  * @author redli
- * @date 2020/3/13
+ * @date 2022/9/9
  */
 public interface UmsAdminCacheService {
     /**

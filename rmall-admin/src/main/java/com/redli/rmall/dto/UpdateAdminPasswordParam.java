@@ -7,9 +7,10 @@ import lombok.Setter;
 import javax.validation.constraints.NotEmpty;
 
 /**
- * @author: redli
- * @date: 2022/9/11 20:51
- * @description:
+ * 更新用户信息
+ *
+ * @author redli
+ * @date 2022/9/9
  */
 
 @Getter

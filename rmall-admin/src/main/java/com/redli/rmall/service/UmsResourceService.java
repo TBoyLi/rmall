@@ -6,7 +6,9 @@ import java.util.List;
 
 /**
  * 后台资源管理Service
- * Created by redli on 2020/2/2.
+ *
+ * @author redli
+ * @date 2022/9/9
  */
 public interface UmsResourceService {
     /**

@@ -9,7 +9,9 @@ import java.util.List;
 
 /**
  * 后台用户与角色关系管理自定义Dao
- * Created by redli on 2018/10/8.
+ *
+ * @author redli
+ * @date 2022/9/9
  */
 public interface UmsAdminRoleRelationDao {
     /**

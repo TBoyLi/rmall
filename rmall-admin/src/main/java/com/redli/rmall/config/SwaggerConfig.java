@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * Swagger API文档相关配置
  *
  * @author redli
- * @date 2018/4/26
+ * @date 2022/9/9
  */
 @Configuration
 @EnableSwagger2

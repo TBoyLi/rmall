@@ -11,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
  * 用户注册参数
  *
  * @author redli
- * @date 2018/4/26
+ * @date 2022/9/9
  */
 @Getter
 @Setter

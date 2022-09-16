@@ -76,7 +76,7 @@
                 <pattern>
                     <pattern>
                         {
-                        "project": "mall",
+                        "project": "rmall",
                         "level": "%level",
                         "service": "${APP_NAME:-}",
                         "pid": "${PID:-}",
@@ -109,7 +109,7 @@
                 <pattern>
                     <pattern>
                         {
-                        "project": "mall",
+                        "project": "rmall",
                         "level": "%level",
                         "service": "${APP_NAME:-}",
                         "pid": "${PID:-}",
@@ -137,7 +137,7 @@
                 <pattern>
                     <pattern>
                         {
-                        "project": "mall",
+                        "project": "rmall",
                         "level": "%level",
                         "service": "${APP_NAME:-}",
                         "pid": "${PID:-}",
@@ -165,7 +165,7 @@
                 <pattern>
                     <pattern>
                         {
-                        "project": "mall",
+                        "project": "rmall",
                         "level": "%level",
                         "service": "${APP_NAME:-}",
                         "class": "%logger",

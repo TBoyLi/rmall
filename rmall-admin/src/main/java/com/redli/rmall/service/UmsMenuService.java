@@ -9,7 +9,7 @@ import java.util.List;
  * 后台菜单管理Service
  *
  * @author redli
- * @date 2020/2/2
+ * @date 2022/9/9
  */
 public interface UmsMenuService {
     /**

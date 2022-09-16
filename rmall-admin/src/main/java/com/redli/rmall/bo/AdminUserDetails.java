@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 /**
  * @author: redli
  * @date: 2022/9/11 20:18
- * @description:
+ * @description: 配置security用户信息
  */
 public class AdminUserDetails implements UserDetails {
 
