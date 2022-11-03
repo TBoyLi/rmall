@@ -28,6 +28,10 @@ public class MallSecurityConfig {
     @Autowired
     private UmsResourceService resourceService;
 
+    /**
+     * 用户信息 UserDetails
+     * @return
+     */
     @Bean
     public UserDetailsService userDetailsService() {
         /**
@@ -43,6 +47,10 @@ public class MallSecurityConfig {
         return username -> adminService.loadUserByUsername(username);
     }
 
+    /**
+     * 动态权限相关业务类 加载所有资源ANT通配符和资源对应MAP 对应数据表 ums_resource
+     * @return DynamicSecurityService
+     */
     @Bean
     public DynamicSecurityService dynamicSecurityService() {
         return new DynamicSecurityService() {

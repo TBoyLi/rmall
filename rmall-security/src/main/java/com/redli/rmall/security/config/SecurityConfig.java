@@ -60,13 +60,15 @@ public class SecurityConfig {
                 // 自定义权限拒绝处理类
                 .and()
                 .exceptionHandling()
+                // 没有权限访问时
                 .accessDeniedHandler(restfulAccessDeniedHandler)
+                // 未登录或登录过期
                 .authenticationEntryPoint(restAuthenticationEntryPoint)
                 // 自定义权限拦截器JWT过滤器
                 .and()
                 .addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
         //有动态权限配置时添加动态权限校验过滤器
-        if(dynamicSecurityService!=null){
+        if (dynamicSecurityService != null) {
             registry.and().addFilterBefore(dynamicSecurityFilter, FilterSecurityInterceptor.class);
         }
         return httpSecurity.build();

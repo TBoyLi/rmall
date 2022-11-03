@@ -22,8 +22,15 @@ import java.io.IOException;
  */
 public class DynamicSecurityFilter extends AbstractSecurityInterceptor implements Filter {
 
+    /**
+     * 动态权限数据源，用于获取动态权限规则
+     */
     @Autowired
     private DynamicSecurityMetadataSource dynamicSecurityMetadataSource;
+
+    /**
+     * SpringSecurity白名单资源路径配置 application.yml - secure.ignored.urls
+     */
     @Autowired
     private IgnoreUrlsConfig ignoreUrlsConfig;
 
@@ -53,7 +60,7 @@ public class DynamicSecurityFilter extends AbstractSecurityInterceptor implement
                 return;
             }
         }
-        //此处会调用AccessDecisionManager中的decide方法进行鉴权操作
+        //此处会调用AccessDecisionManager (DynamicAccessDecisionManager) 中的decide方法进行鉴权操作
         InterceptorStatusToken token = super.beforeInvocation(fi);
         try {
             fi.getChain().doFilter(fi.getRequest(), fi.getResponse());
