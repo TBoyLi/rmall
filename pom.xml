@@ -18,7 +18,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.0</version>
+        <version>2.7.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -28,25 +28,27 @@
         <java.version>1.8</java.version>
         <skipTests>true</skipTests>
         <docker.host>http://192.168.3.105:2375</docker.host>
-        <docker.maven.plugin.version>0.40.0</docker.maven.plugin.version>
-        <pagehelper-starter.version>1.4.2</pagehelper-starter.version>
-        <pagehelper.version>5.3.0</pagehelper.version>
-        <druid.version>1.2.9</druid.version>
-        <hutool.version>5.8.0</hutool.version>
-        <springfox-swagger.version>3.0.0</springfox-swagger.version>
+        <docker.maven.plugin.version>0.40.2</docker.maven.plugin.version>
+        <pagehelper-starter.version>1.4.5</pagehelper-starter.version>
+        <pagehelper.version>5.3.2</pagehelper.version>
+        <druid.version>1.2.14</druid.version>
+        <hutool.version>5.8.9</hutool.version>
         <knife4j.version>3.0.3</knife4j.version>
+        <springfox-swagger.version>3.0.0</springfox-swagger.version>
         <swagger-models.version>1.6.0</swagger-models.version>
         <swagger-annotations.version>1.6.0</swagger-annotations.version>
+        <mybatis.version>3.5.10</mybatis.version>
         <mybatis-generator.version>1.4.1</mybatis-generator.version>
-        <mybatis.version>3.5.9</mybatis.version>
-        <mysql-connector.version>8.0.29</mysql-connector.version>
-        <spring-data-commons.version>2.7.0</spring-data-commons.version>
+        <mysql-connector.version>8.0.32</mysql-connector.version>
+        <spring-data-commons.version>2.7.5</spring-data-commons.version>
         <jjwt.version>0.9.1</jjwt.version>
         <aliyun-oss.version>2.5.0</aliyun-oss.version>
         <logstash-logback.version>7.2</logstash-logback.version>
-        <minio.version>8.4.1</minio.version>
+        <minio.version>8.4.5</minio.version>
+        <jaxb-api.version>2.3.1</jaxb-api.version>
         <rmall-common.version>1.0-SNAPSHOT</rmall-common.version>
         <rmall-mbg.version>1.0-SNAPSHOT</rmall-mbg.version>
+        <rmall-mbp.version>1.0-SNAPSHOT</rmall-mbp.version>
         <rmall-security.version>1.0-SNAPSHOT</rmall-security.version>
     </properties>
 
@@ -79,6 +81,7 @@
         </dependency>
     </dependencies>
 
+    <!-- rmall依赖版本控制    -->
     <dependencyManagement>
         <dependencies>
             <!--mall通用模块-->
@@ -87,7 +90,7 @@
                 <artifactId>rmall-common</artifactId>
                 <version>${rmall-common.version}</version>
             </dependency>
-            <!--mall中MBG生成模块-->
+            <!--mall中mybatis generator生成模块-->
             <dependency>
                 <groupId>com.redli.rmall</groupId>
                 <artifactId>rmall-mbg</artifactId>
@@ -145,17 +148,17 @@
                 <artifactId>swagger-annotations</artifactId>
                 <version>${swagger-annotations.version}</version>
             </dependency>
-            <!-- MyBatis 生成器 -->
-            <dependency>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-core</artifactId>
-                <version>${mybatis-generator.version}</version>
-            </dependency>
             <!-- MyBatis-->
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
                 <version>${mybatis.version}</version>
+            </dependency>
+            <!-- MyBatis 生成器 -->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator.version}</version>
             </dependency>
             <!--Mysql数据库驱动-->
             <dependency>

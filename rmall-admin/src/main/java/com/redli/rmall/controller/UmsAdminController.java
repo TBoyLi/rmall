@@ -99,7 +99,9 @@ public class UmsAdminController {
         data.put("icon", umsAdmin.getIcon());
         List<UmsRole> roleList = adminService.getRoleList(umsAdmin.getId());
         if(CollUtil.isNotEmpty(roleList)){
-            List<String> roles = roleList.stream().map(UmsRole::getName).collect(Collectors.toList());
+            List<String> names = roleList.stream().map(UmsRole::getName).collect(Collectors.toList());
+            List<String> roles = roleList.stream().map(UmsRole::getType).collect(Collectors.toList());
+            data.put("names",names);
             data.put("roles",roles);
         }
         return CommonResult.success(data);

@@ -51,7 +51,7 @@ public class SecurityConfig {
                 .authorizeRequests()
                 .anyRequest()
                 .authenticated()
-                // 关闭跨站请求防护及不使用session
+                // 关闭跨站请求防护及不使用session 由于使用的是JWT，我们这里不需要csrf
                 .and()
                 .csrf()
                 .disable()
